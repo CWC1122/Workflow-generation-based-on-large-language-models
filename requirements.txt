@@ -1,0 +1,20 @@
+# Tested with Python 3.10.
+
+# Core DRAG pipeline
+numpy==1.26.4
+scipy==1.15.3
+requests==2.32.5
+tqdm==4.67.1
+openai==2.15.0
+
+# Baseline and retrieval utilities
+scikit-learn==1.7.2
+gensim==4.4.0
+nltk==3.9.1
+
+# Optional acceleration: Stage1/Stage2 retrieval falls back to NumPy if FAISS
+# is unavailable, so this is not required for the default release pipeline.
+# faiss-cpu==1.7.4
+
+# Optional DHGL baseline backend: only needed if you use Baseline/DHGL/rag.
+# pymilvus==2.4.9
